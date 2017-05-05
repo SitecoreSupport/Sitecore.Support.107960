@@ -19,7 +19,7 @@ namespace Sitecore.Support.Form.Core.Pipeline.InsertRenderings.Processors
         Assert.IsNotNull(args.ContextItemPath, "args.ContextItemPath");
         var item = args.ContentDatabase.GetItem(args.ContextItemPath, Language.Parse(WebUtil.GetQueryString("la")));
         Assert.IsNotNull(item, "currentItem");
-        var obj2 = Context.ClientData.GetValue(StaticSettings.PrefixId + StaticSettings.PlaceholderKeyId);
+        var obj2 = Context.ClientData.GetValue(StaticSettings.prefixId + StaticSettings.PlaceholderKeyId);
         var str = obj2?.ToString() ?? string.Empty;
         var designMode = StaticSettings.DesignMode;
         if (item.Fields["__renderings"] != null && item.Fields["__renderings"].Value != string.Empty)
