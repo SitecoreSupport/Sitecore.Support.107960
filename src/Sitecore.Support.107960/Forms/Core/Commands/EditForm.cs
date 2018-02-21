@@ -1,25 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Web;
-using Newtonsoft.Json;
-using Sitecore.Data;
-using Sitecore.Diagnostics;
-using Sitecore.Form.Core.Configuration;
-using Sitecore.Form.Core.Utility;
-using Sitecore.Forms.Core.Data;
-using Sitecore.Layouts;
-using Sitecore.Shell.Applications.WebEdit.Commands;
-using Sitecore.Shell.Framework.Commands;
-using Sitecore.Text;
-using Sitecore.Web.UI.Sheer;
-using Sitecore.WFFM.Abstractions.Dependencies;
-using static System.String;
-using WebUtil = Sitecore.Web.WebUtil;
-
-namespace Sitecore.Support.Forms.Core.Commands
+﻿namespace Sitecore.Support.Forms.Core.Commands
 {
+  using Newtonsoft.Json;
+  using Shell.Applications.WebEdit.Commands;
+  using WFFM.Abstractions.Dependencies;
+  using System;
+  using System.Collections.Generic;
+  using System.Collections.Specialized;
+  using System.Linq;
+  using System.Web;
+  using Sitecore.Data;
+  using Sitecore.Diagnostics;
+  using Sitecore.Form.Core.Configuration;
+  using Sitecore.Form.Core.Utility;
+  using Sitecore.Forms.Core.Data;
+  using Sitecore.Layouts;
+  using Sitecore.Shell.Framework.Commands;
+  using Sitecore.Text;
+  using Sitecore.Web.UI.Sheer;
+  using static System.String;
+  using WebUtil = Sitecore.Web.WebUtil;
+
   [Serializable]
   public class EditForm : WebEditCommand
   {
